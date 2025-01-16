@@ -1,0 +1,9 @@
+<h1>User details</h1>
+<form method="POST">
+    {% csrf_token %}
+    user_name :<input type="text" name="username"><br>
+    password :<input type="password" name="pwd"><br>
+    role_name :<input type="radio" name="role" value="user">User
+               <input type="radio" name="role" value="admin">Admin<br>
+    <input type="submit" value="Create user" name="btn">
+</form>
