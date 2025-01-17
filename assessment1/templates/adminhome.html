@@ -1,0 +1,21 @@
+<h2>Welcome to admin home...{{Username}}</h2>
+
+<table border="solid">
+    <tr>
+        <th>Sl.No</th>
+        <th>Username</th>
+        <th>Role_name</th>
+    </tr>
+    <tr>
+        <td>{{data.user_id}}</td>
+        <td>{{data.user_name}}</td>
+        <td>{{data.roll_name}}</td>
+    </tr>
+    {% for data1 in user %}
+    <tr>
+        <td>{{data1.user_id}}</td>
+        <td>{{data1.user_name}}</td>
+        <td>{{data1.roll_name}}</td>
+    </tr>
+    {% endfor %}
+</table>
