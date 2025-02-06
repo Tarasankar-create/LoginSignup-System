@@ -16,8 +16,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path,include
+from assessment2.views import order,orderplace
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('assessment1/',include('assessment1.urls')),
+    path('',include('assessment1.urls')),
+     path('order/',order, name='order'),
+     path('orderplace/',orderplace, name='orderplace'),
 ]
